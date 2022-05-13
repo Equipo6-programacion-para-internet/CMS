@@ -22,9 +22,8 @@
 
                 <?php
 //ob_start();
-$root = realpath($_SERVER["DOCUMENT_ROOT"]);
-include "$root/CMS/controllers/abrir_conexion.php";
-include "$root/CMS/controllers/Hash.php";
+include "../../controllers/abrir_conexion.php";
+include "../../controllers/Hash.php";
 
 
   	if(isset($_POST['btn1'])){
