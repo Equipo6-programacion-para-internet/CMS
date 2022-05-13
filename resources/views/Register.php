@@ -34,14 +34,15 @@ include "$root/CMS/controllers/Hash.php";
         $nombre=$_POST['Nombre_completo'];
   		$correo=$_POST['Correo'];
   		$contra=$_POST['Contra'];
+          $rol="CLIENTE";
 
           $contraEncriptada=SED::encryption($contra);
 
        
 
-          $conexion->query("INSERT INTO usuarios (NombreCompleto,Email,Contra) values ('$nombre','$correo','$contraEncriptada')");
+          $conexion->query("INSERT INTO usuarios (Email,Contra,Rol) values ('$correo','$contraEncriptada','$rol')");
 
-          
+
 
       }
 
