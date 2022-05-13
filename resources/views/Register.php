@@ -12,12 +12,41 @@
         <div class="container-register ">
             <div class="col-left">
                 <h1>Registrar</h1>
-                <form class="form-group">
-                    <input type="text" class="input" placeholder="Nombre completo">
-                    <input type="text" class="input " placeholder="Correo">
-                    <input type="password" class="input" placeholder="Contraseña">
-                    <input type="submit" class="btn" value="Registrarse">
+                <form class="form-group" action="Register.php" method="POST">
+                    <input type="text" class="input" placeholder="Nombre completo" id="Nombre_completo" name="Nombre_completo">
+                    <input type="text" class="input " placeholder="Correo" id="Correo" name="Correo">
+                    <input type="password" class="input" placeholder="Contraseña" id="Contra" name="Contra">
+                    <input type="submit" class="btn btn-success" value="Registrarse" id="btn1" name="btn1">
                 </form> 
+
+
+                <?php
+//ob_start();
+$root = realpath($_SERVER["DOCUMENT_ROOT"]);
+include "$root/CMS/controllers/abrir_conexion.php";
+include "$root/CMS/controllers/Hash.php";
+
+
+  	if(isset($_POST['btn1'])){
+
+      
+
+        $nombre=$_POST['Nombre_completo'];
+  		$correo=$_POST['Correo'];
+  		$contra=$_POST['Contra'];
+
+          $contraEncriptada=SED::encryption($contra);
+
+       
+
+          $conexion->query("INSERT INTO usuarios (NombreCompleto,Email,Contra) values ('$nombre','$correo','$contraEncriptada')");
+
+          
+
+      }
+
+      ?>
+
             </div>
             <div class="col-right border-radius">
                 <div class="content-text">
@@ -30,5 +59,9 @@
         </div>
 
     </div>
+
+  
+
+
 </body>
 </html>
