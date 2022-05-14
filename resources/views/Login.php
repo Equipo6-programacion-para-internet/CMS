@@ -1,4 +1,41 @@
-﻿<!DOCTYPE html>
+﻿<?php
+require_once '../config/config.php';
+require_once '../config/functions.php';
+$conexion = connect($server,$port,$db,$user,$pass);
+
+if(!$conexion){
+    die("Conexion fallida: " . mysqli_connect_error());
+}
+
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    
+$usuario = $_POST['usuario'];
+$password = $_POST['password'];
+
+$sql = "SELECT * FROM usuarios WHERE Email = '$usuario' AND Contra = '$password'";
+
+$query = $conexion->prepare($sql);
+$query->execute();
+$resultado = $query->fetchAll();
+
+if($resultado[0]['Rol'] == "ADMINISTRADOR"){
+ 
+    echo "<br>-------Bienvenido Administrador\n---------";
+    header('Location: Clientes.php?Rol='.$resultado[0]['Rol']);
+    
+}else if($resultado[0]['Rol'] == "CLIENTE"){
+
+    echo "<br>-------Bienvenido Cliente\n---------";
+    header('Location: Clientes.php?Rol='.$resultado[0]['Rol']);
+}else{
+    echo'<script type="text/javascript">
+        alert("Error el email o contraseña son invalidos");
+        </script>';
+}
+
+}
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,12 +49,12 @@
         <div class="container-login">
             <div class="col-left">
                 <h1>Ingresar</h1>
-                <form class="form-group" method="GET" action="register.html">
-                    <input type="text" class="input " placeholder="Correo">
-                    <input type="password" class="input" placeholder="Contraseña">
+                <form class="form-group" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
+                    <input type="text" name="usuario" class="input" placeholder="Correo" required>
+                    <input type="password" name="password" class="input" placeholder="Contraseña" required>
                     <input type="submit" class="btn" value="Ingresar">
                 
-                        <a href="">Ingresar como invitado</a>
+                        <a href="Clientes.php?Rol=ANONIMO">Ingresar como invitado</a>
                 </form> 
             </div>
             <div class="col-right">
