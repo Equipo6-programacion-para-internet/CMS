@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;700&display=swap');
+*{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+body{
+    background-color: #f2f2f2;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+
+@media (max-width:952px){
+    .enlace{
+        padding-left: 20px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.inicio{
+    background-color: bisque;
+    height: 80px;
+    width: 100%;
+
+}
+
+.clientes{
+    background-color: #ee6e72;
+    height: 80px;
+    width: 100%;
+}
+.clientesP{
+    background-color: #aadebc;
+    height: 80px;
+    width: 100%;
+}
+
+nav.container{
+    max-width: 500px;
+}
+.ulmenu{
+    display: inline-flex;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.logo{
+    max-height: 80px;
+    height: 75px;
+    position: absolute;
+}
+
+.enlace{
+    position: absolute;
+    padding: 0px 50px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-flex;
+    text-align: center;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    padding: 8px 15px;
+   
+}
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.container1{
+   display: flex;
+}
+.container2{
+    width: 500px;
+    padding-top: 30px;
+    padding-left: 50px;
+    
+}
+
+.container3{
+    padding-top: 30px;
+    padding-right: 50px; 
+    float: right;
+    width: 700px;
+}
+
+
+.formulario{
+    width:95%;
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+}
+
+input{
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-color: #dcd7d7;
+    border: none;
+    padding: 7px;
+    
+}
+
+
+#imagen{
+    padding: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #dcd7d7;
+    border: none;
+}
+
+#descripcion{
+    padding: 40px 55px;
+    background-color: #dcd7d7;
+    border: none;
+    margin: auto;
+}
+
+.boton{
+    color: #f2f2f2;
+    background-color: #ee6e72;
+    border-radius: 3px;
+    border: 1.75px solid #3AB199;
+    padding: 10px 20px;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.boton:hover{
+    background-color: #d24146;
+}
+
+#name{
+    padding: 10px 50px;
+    height: 10px;
+    width: 50%;
+}
+
+#apellido{
+    padding: 10px 50px;
+    width: 50%;
+}
+#mail{
+    padding: 10px 150px;
+
+    width: 100%;
+}
+
+#phone{
+    width: 35%;
+}
