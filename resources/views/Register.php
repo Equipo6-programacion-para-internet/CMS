@@ -54,7 +54,7 @@ include "../../controllers/Hash.php";
                     <h2>Bienvenido</h2>
                     <p>Ingresa los datos requeridos para crear una cuenta</p>
                     <p>¿Ya tienes una cuenta? inicia sesión</p>
-                    <button id="btn-register"><a class="btn-ref" href="./index.html">Iniciar sesión</a></button>
+                    <button id="btn-register"><a class="btn-ref" href="Login.php">Iniciar sesión</a></button>
                 </div>
             </div>
         </div>
