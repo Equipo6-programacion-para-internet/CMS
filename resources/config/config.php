@@ -6,5 +6,4 @@
     $pass = "";
     $db = "dclient";
  
-
 ?>
