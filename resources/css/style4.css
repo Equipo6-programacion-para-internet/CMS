@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;700&display=swap');
+*{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+body{
+    background-color: #f2f2f2;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+
+@media (max-width:952px){
+    .enlace{
+        padding-left: 20px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+    box-shadow: 3px 3px 3px gray;
+}
+.inicio{
+    background-color: bisque;
+    height: 80px;
+    width: 100%;
+}
+
+nav.container{
+    max-width: 500px;
+}
+.ulmenu{
+    display: inline-flex;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    max-height: 80px;
+    height: 75px;
+    position: absolute;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}

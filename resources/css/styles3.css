@@ -25,6 +25,7 @@ body{
 .container{
     max-width: 1400px;
     margin: auto;
+    box-shadow: 3px 3px 3px gray;
 }
 .inicio{
     background-color: bisque;

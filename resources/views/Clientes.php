@@ -15,17 +15,27 @@ $resultado =$query->fetchAll();
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<section>
-          <?php foreach($resultado as $cliente) :?>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles3.css">
+    <link rel="icon" href="../img/clienteP.png">
+    <title>Clientes</title>
+</head>  
+<body>
+    <section>
+            <?php foreach($resultado as $cliente) :?>
                 <div class="cliente">
                     <h3> 
-                        <?php echo $cliente['Nombres']?> 
-                        <?php echo $cliente['Apellidos']?> 
+                    <?php echo $cliente['Nombres']?> 
+                    <?php echo $cliente['Apellidos']?> 
                     </h3>
                     <p><?php echo $cliente['Telefono']?></p>
                     <p><?php echo $cliente['DireccionF']?></p>
                 </div>           
             <?php endforeach; ?>
       </section>
+</body>
 </html>
 <?php $conexion = null;?>
