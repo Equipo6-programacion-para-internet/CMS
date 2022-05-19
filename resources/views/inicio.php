@@ -55,6 +55,12 @@
             <h5>Admin Yair Gutiérrez Domínguez</h5>
             <h5>Jazmín Alejandra Lomelí Zermeño</h5>
         </div>
+            
+            <footer>
+            <h4>Texto de relleno para cuando se me ocurra que poner</h4>
+            <h4>&#169 Dclient</h4>
+            
+        </footer>
 
         
 </body>
