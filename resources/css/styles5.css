@@ -114,3 +114,9 @@ padding-right: 50px;
    text-align: center;
    clear: both;
 }
+
+footer{
+    height: 80px;
+    background-color: bisque;
+    text-align: center;
+}
