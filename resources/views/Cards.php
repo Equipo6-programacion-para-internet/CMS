@@ -34,23 +34,32 @@
         <div>
             <form action="" class="formulario" action="Cards.php" method="POST" >
                 <div class="inputs">
-                    <input type="image" id="imagen" name="imagen" src="../img/image.png">
-                    <input type="text" id="name" name="nombre" placeholder="Nombre">
-                    <input type="text" id="phone" name="telefono" placeholder="Teléfono">
-                    <input type="email" id="mail" name="mail" placeholder="Correo Electrónico">
-                    <input type="text" id="empresa" name="empresa" placeholder="Empresa">
-                    <input type="text" id="card" name="card" placeholder="Tarjeta de crédito">
-                    <input type="text" id="fecha" name="fechaV" placeholder="Fecha vencimiento">
-                    <input type="text" id="cvv" name="cvv" placeholder="CVV">
-                    <input type="text" id="desc" name="desc" placeholder="Descripción del cliente">
-                    <input type="submit" class="btn btn-success" value="Registrar" id="btn" name="btn">
-                    <button class="boton" id="btn" name="btn">Registrar</button>
+                    
+                      <input class="entrada_texto" type="image" id="imagen" name="imagen" src="../img/image.png">
+
+                    <div class="custom-input-file col-md-6 col-sm-6 col-xs-6">
+<input type="file" class="input-file" value="" id="subir_imagen" name="subir_imagen">
+<img class="subir_foto" src="../img/subir_foto.png" alt="">
+</div>
+                    <input class="entrada_texto" type="text" id="name" name="nombre" style="width:23%;" placeholder="Nombre">
+                    <input class="entrada_texto" type="text" id="lastname" name="apellido" style="padding: 10px; height: 10px; width: 23%;" placeholder="Apellido">
+                    <input class="entrada_texto" type="text" id="phone" name="telefono" placeholder="Teléfono">
+                    <input class="entrada_texto" type="email" id="mail" name="mail" placeholder="Correo Electrónico">
+                    <input class="entrada_texto" type="text" id="empresa" name="empresa" placeholder="Empresa">
+                    <input class="entrada_texto" type="text" id="card" name="card" placeholder="Tarjeta de crédito">
+                    <input class="entrada_texto" type="text" id="fecha" name="fechaV" placeholder="Fecha vencimiento">
+                    <input class="entrada_texto" type="text" id="cvv" name="cvv" placeholder="CVV">
+                    <input class="entrada_texto" type="text" id="direccion" name="direccion" style="padding: 10px; height: 10px; width: 100%;" placeholder="Direccion Fiscal">
+                    <input class="entrada_texto" type="text" id="desc" name="desc" placeholder="Descripción del cliente">
+                    <!--<input type="submit" class="btn btn-success" value="Registrar" id="btn" name="btn">-->
+                    <input type="submit" class="boton" id="btn" name="btn" value="Registrar">
                     <?php
         include "../../controllers/abrir_conexion.php";
         include "../../controllers/Hash.php";
         if(isset($_POST['btn'])){
             $subs_imagen = $_POST['imagen'];
             $subs_name = $_POST['nombre'];
+              $subs_last = $_POST['apellido'];
             $subs_telefono = $_POST['telefono'];
             $subs_email = $_POST['email'];
             $subs_empresa = $_POST['empresa'];
