@@ -102,7 +102,7 @@ if($resultado[0]['Rol'] == "ADMINISTRADOR"){
             </div>
             
             <div class="texto_info">
-            <h2>Universidad de Guadaljara</h2>
+            <h2>Universidad de Guadalajara</h2>
                 Programacion para internet 
                 
                 <ul>
