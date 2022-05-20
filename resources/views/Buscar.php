@@ -39,7 +39,10 @@
             <button id="boton">Agregar+</button>
         </div>
     
-        
+        <footer>
+            <h4>Texto de relleno para cuando se me ocurra que poner</h4>
+            <h4>&#169 Dclient</h4>
+        </footer>
         
 
         
