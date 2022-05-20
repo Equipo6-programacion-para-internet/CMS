@@ -41,12 +41,30 @@ if($resultado[0]['Rol'] == "ADMINISTRADOR"){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css"> 
     <link rel="icon" href="../img/login.png">
     <title>Login</title>
 </head>
 <body>
+<!-- 
+            <div class="boton_info" id="btninfo">
+                <span class="material-icons">
+                    info   
+                </span>
+            </div>
+-->
+
+        <!--Boton -->
+        <div class="boton-modal">
+                    <label for="btn-modal">
+                    &nbsp;  i &nbsp; 
+                    </label>
+            </div>
+
+
     <div class="container">
+    
         <div class="container-login">
             <div class="col-left">
                 <h1>Ingresar</h1>
@@ -69,5 +87,45 @@ if($resultado[0]['Rol'] == "ADMINISTRADOR"){
         </div>
 
     </div>
+   
+<!-- Si se presiona el boton de info aparecera el sig cuadro -->
+
+<!--Boton -->
+
+<!--Ventana modal  -->
+    <input type="checkbox" id="btn-modal"> <!-- Para que aparesca -->
+    <div class="container-modal">
+            
+        <div class="content-modal">
+            <div class="btn-cerrar">
+                    <label for="btn-modal">  &nbsp;  X &nbsp;  </label>
+            </div>
+            
+            <div class="texto_info">
+            <h2>Universidad de Guadaljara</h2>
+                Programacion para internet 
+                
+                <ul>
+                    <li> Alexis de Jésus Agurirre Lara </li>
+                    <li> Aarón Yael Carranza Vera </li>
+                    <li>Stephany Michelle Cortez </li>
+                    <li>Juan Pedro Dominguez Padilla</li>
+                    <li>Admin Yair Gutierrez Domimguez</li>
+                    <li>Jazmin Alejandra Lomelí Zermeño</li>
+
+                </ul>
+
+            </div>
+            
+           
+    
+       </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"> 
+    </script>
+   <script src="../js/info.js"></script> 
 </body>
 </html>
