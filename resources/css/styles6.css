@@ -5,10 +5,15 @@
     
 }
 
+html{
+    min-height: 100%;
+    position: relative;
+}
 body{
     background-color: #f2f2f2;
     margin: 0;
     box-sizing: border-box;
+    margin-bottom: 80px;
 }
 
 @media (max-width:952px){
@@ -113,4 +118,13 @@ nav ul li a:hover{
 
 #boton:hover{
     background-color: #d24146;
+}
+
+footer{
+    height: 80px;
+    background-color: bisque;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
 }
