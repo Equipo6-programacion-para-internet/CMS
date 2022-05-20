@@ -8,7 +8,7 @@ require_once '../config/functions.php';
 if(!$conexion){
    header('Location: Login.php');
 }*/
-$mysqli = new mysqli("localhost","root","root","dclient");
+$mysqli = new mysqli("localhost","root","","dclient");
 
 //$mysqli =$conexion->prepare("SELECT Nombres, Apellidos, Telefono, DireccionF,Empresa
 //FROM clientes WHERE idClientes>1;");
