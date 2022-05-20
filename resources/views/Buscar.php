@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles6.css">
+    <link rel="stylesheet" type="text/css" href="../css/style_clientes.css">
+    <link rel="stylesheet" type="text/css" href="../css/style_clientes.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/core.css">
+    <link rel="stylesheet" type="text/css" href="../css/core.min.css">
     <link rel="icon" href="../img/buscar.png">
     <title>Ver</title>
 </head>
@@ -36,15 +40,22 @@
         
         <div class="container2">
             <input type="text" id="buscar" placeholder="buscar" >
-            <button id="boton">Agregar+</button>
+            <!--<button id="boton">Agregar+</button>-->
         </div>
-    
-        <footer>
+
+
+<div id="datos">
+
+</div>
+
+
+        <footer class="footer">
             <h4>Texto de relleno para cuando se me ocurra que poner</h4>
             <h4>&#169 Dclient</h4>
         </footer>
         
-
+        <script src="../js/jquery-3.6.0.min.js"></script>     
+<script src="../js/Buscar.js"></script>
         
 </body>
 </html>
