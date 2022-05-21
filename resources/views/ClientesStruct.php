@@ -155,7 +155,11 @@ if ( in_array($_FILES['subir_imagen']['type'], $extensiones) || $ruta=="" ) {
 
     </div>
         </main>
-  
+    
+        <footer>
+            <h4>Texto de relleno para cuando se me ocurra que poner</h4>
+            <h4>&#169 Dclient</h4>
+        </footer>
 
 </body>
 </html>
