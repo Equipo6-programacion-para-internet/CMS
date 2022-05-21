@@ -41,13 +41,32 @@
 
       </seccion>
 
+        <div class="caracteristicas">
+        <h1>Características<br></h1>
+        
+            <p>DClient te ofrece la oportunidad de visualizar<br>clientes, crear, mostrar, actualizar y eliminar<br>con base a la información de ellos. Cada operación<br>que se realice requiere credenciales de nivel<br>de usuario y así se puedan efectuar dichos<br>movimientos. Es fácil de usar, cómodo, seguro, <br>agradable a la vista y con todo lo necesario <br>y básico de una agenda, pero con un plus.</p>
+            <div class="img">
+            <img id="img2" src="../img/caracteristicas.jpg" alt="">
+            </div>
+        </div>
+        <div class="equipo">
+            <h1>Equipo desarrollador</h1>
+            <h5>Alexis de Jesús Aguirre Lara</h5>
+            <h5>Aarón Yael Carranza Vera</h5>
+            <h5>Stephany Michelle Cortés González</h5>
+            <h5>Juan Pedro Domíngez Padilla</h5>
+            <h5>Admin Yair Gutiérrez Domínguez</h5>
+            <h5>Jazmín Alejandra Lomelí Zermeño</h5>
+        </div>
 
+        <footer>
+            <h4>Texto de relleno para cuando se me ocurra que poner</h4>
+            <h4>&#169 Dclient</h4>
+            
+        </footer>
 
-
-    <footer>
-          <h4>Texto de relleno para cuando se me ocurra que poner</h4>
-          <h5>&#169 Dclient</h5>
-    </footer>
-    
+        
 </body>
 </html>
+
+    
