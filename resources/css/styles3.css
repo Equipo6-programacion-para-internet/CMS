@@ -115,7 +115,7 @@ nav ul li a:hover{
   
 }
 
-input{
+.entrada_texto{
     margin-bottom: 15px;
     border-radius: 4px;
     background-color: #dcd7d7;
@@ -126,12 +126,15 @@ input{
 
 
 #imagen{
-    padding: 40px;
-    width: 40px;
-    height: 40px;
+    padding: 10px;
+    width: 80%;
+    height: 60%;
+   left: -5vw;
     border-radius: 50%;
     background-color: #dcd7d7;
     border: none;
+  
+    
 }
 
 #descripcion{
@@ -142,35 +145,90 @@ input{
 }
 
 .boton{
-    color: #f2f2f2;
     background-color: #ee6e72;
-    border-radius: 3px;
+    color: #f2f2f2;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 12px 22px;
     border: 1.75px solid #3AB199;
-    padding: 10px 20px;
     margin: auto;
-    padding-top: 15px;
 }
 
 .boton:hover{
     background-color: #d24146;
 }
 
-#name{
-    padding: 10px 50px;
-    height: 10px;
+#nombre{
+  padding: 10px 30px;
     width: 50%;
+    left: -5vw;
 }
 
 #apellido{
     padding: 10px 50px;
     width: 50%;
 }
-#mail{
+#email{
     padding: 10px 150px;
 
-    width: 100%;
+    width: 40%;
 }
 
-#phone{
-    width: 35%;
+#telefono{
+    width: 60%;
 }
+
+.custom-input-file {
+    background-color: #03640a;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 auto 0;
+    min-height: 15px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  
+    left: -5vw;
+    bottom: 6vh;
+  }
+  
+  .custom-input-file .input-file {
+   border: 10000px solid transparent;
+   cursor: pointer;
+   font-size: 10000px;
+   margin: 0;
+   opacity: 0;
+   outline: 0 none;
+   padding: 0;
+   position: absolute;
+  
+   top: -1000px;
+  }
+
+.subir_foto{
+      width: 25px;
+      height: 25px;
+      padding: 5px;
+      z-index: 500;
+  }
+
+  main section {
+      display: flex;
+  }
+
+  .formulario ul{
+      display: flex;
+  }
+
+  .foto-cliente{
+      width: 30%;
+      height: 20%;
+      border-radius: 50%;
+
+  }
