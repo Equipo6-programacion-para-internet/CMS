@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/login.png">
     <title>Login</title>
 </head>
 
@@ -32,7 +33,7 @@
                     <h2>Hola de nuevo</h2>
                     <p>Ingresa el correo y la contraseña para iniciar sesion</p>
                     <p>Si no tienes una cuenta puedes crear una aqui</p>
-                    <button id="btn-register"><a href="#">Registrar</a></button>
+                    <button id="btn-register"><a href="ClientesStruct.php">Registrar</a></button>
                 </div>
             </div>
         </div>
@@ -41,38 +42,36 @@
 
     <!--Ventana modal  -->
     <input type="checkbox" id="btn-modal"> <!-- Para que aparesca -->
+
     <div class="container-modal">
             
         <div class="content-modal">
-            <div class="btn-cerrar">
-                    <label for="btn-modal">  &nbsp;  X &nbsp;  </label>
-            </div>
+                <div class="btn-cerrar">
+                        <label for="btn-modal">  &nbsp;  X &nbsp;  </label>
+                </div>
             
-            <div class="texto_info">
-            <h2>Universidad de Guadalajara</h2>
-                Programacion para internet 
-                
-                <ul>
-                    <li> Alexis de Jésus Agurirre Lara </li>
-                    <li> Aarón Yael Carranza Vera </li>
-                    <li>Stephany Michelle Cortez </li>
-                    <li>Juan Pedro Dominguez Padilla</li>
-                    <li>Admin Yair Gutierrez Domimguez</li>
-                    <li>Jazmin Alejandra Lomelí Zermeño</li>
+                <div class="texto_info">
+                    <h2>Universidad de Guadalajara</h2>
+                     <p>   Programación para internet 
+                    
+                    <ul>
+                        <li> &nbsp; Alexis de Jesús Aguirre Lara. </li>
+                        <li> &nbsp; Aarón Yael Carranza Vera. </li>
+                        <li> &nbsp; Stephany Michelle Cortés González. </li>
+                        <li> &nbsp; Juan Pedro Domíngez Padilla.</li>
+                        <li> &nbsp; Admin Yair Gutiérrez Domínguez.</li>
+                        <li> &nbsp; Jazmin Alejandra Lomelí Zermeño.</li>
 
-                </ul>
-
-            </div>
-            
-           
+                    </ul>
+                </div>
     
-       </div>
-
+         </div>
+         <label for="btn-modal" class="cerrar-modal"></label>
     </div>
 
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"> 
     </script>
-   <script src="../js/info.js"></script> 
 </body>
 </html>
+
