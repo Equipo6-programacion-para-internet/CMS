@@ -33,7 +33,7 @@
                     <h2>Hola de nuevo</h2>
                     <p>Ingresa el correo y la contraseña para iniciar sesion</p>
                     <p>Si no tienes una cuenta puedes crear una aqui</p>
-                    <button id="btn-register"><a href="#">Registrar</a></button>
+                    <button id="btn-register"><a href="ClientesStruct.php">Registrar</a></button>
                 </div>
             </div>
         </div>
