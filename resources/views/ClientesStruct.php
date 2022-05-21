@@ -136,6 +136,9 @@ if ( in_array($_FILES['subir_imagen']['type'], $extensiones) || $ruta=="" ) {
 
     if($ruta!=""){
         copy($ruta,$destino);
+        }else{
+            $destino="";
+            $destino.="../fotoClientes/foto1.jpg";
         }
 
     $conexion->query("INSERT INTO clientes (Foto,Nombres,Apellidos,Telefono,Empresa,Tarjeta,FechaT,CVV,DireccionF,Descripcion) values ('$destino','$subs_name','$subs_last','$subs_telefono','$subs_empresa','$subs_card','$subs_fechaV','$subs_cvv','$subs_dir','$subs_desc')");
