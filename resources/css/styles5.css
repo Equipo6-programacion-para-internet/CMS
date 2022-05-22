@@ -1,131 +1,203 @@
 
-@import url("footer.css");
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;700&display=swap');
-*{
-    text-decoration: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body{
+    
+    font-family: 'Yantramanav', sans-serif;
     padding: 0;
     margin: 0;
 }
-html {
-    min-height: 100%;
-    position: relative;
+
+
+:root{
+    --color-base: rgba(255,228,196,1);
+    --color-letras: #3b3b3b;
+    --color-active: #7e7e7e;
+    --color-boton: #D81159;
+
+}
+.container-header{
+    width: 100vw;
+    height: 70px;
+    background-color: var(--color-base);
+    position: fixed;
+    top: 0;
 }
 
-body{
-    padding-bottom: 25vh; 
-    display: flex;
-    flex-direction: column;
-    background-color: #f2f2f2;
-    box-sizing: border-box;
-    min-height: 100vh;
-    margin: 0;
-    position: relative;
-}
-header .container{
-    max-width: 1400px;
+.container-header header nav{
+    width: 90%;
     margin: auto;
-    box-shadow: 3px 3px 3px gray;
-}
-.inicio{
-    background-color: bisque;
-    height: 80px;
-    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 
-}
-
-.clientes{
-    background-color: #ee6e72;
-    height: 80px;
-    width: 100%;
-}
-.clientesP{
-    background-color: #aadebc;
-    height: 80px;
-    width: 100%;
-}
-
-nav.container{
-    max-width: 500px;
-}
-.ulmenu{
-    display: inline-flex;
-    margin: 0;
-    box-sizing: border-box;
+    
     
 }
 
+
+.container-header header nav ul{
+    display: flex;
+    gap: 15px;
+}
+
+.container-header header nav ul li{
+    list-style: none;
+}
+
+.container-header header nav ul li a{
+    text-decoration: none;
+    padding: 7px 12px;   
+    transition: all 0.3s ease-in-out;
+    color: var(--color-letras);
+
+}
+
+.container-header header nav ul li a:hover{
+    background-color: #fff;
+    color: #3b3b3b;
+}
+
+.container-header header nav ul li .active{
+    border-bottom: 2px solid var(--color-active);
+}
+
 .logo{
-    max-height: 80px;
-    height: 75px;
-    position: absolute;
+    width: 80px;    
 }
 
-.enlace{
-    position: absolute;
-    padding: 0px 50px;
+.logo img{
+    width: 100%;
+    
+}
+a{
+    text-decoration: none;   
 }
 
-nav ul{
-    float: right;
-    margin-right: 20px;
+
+
+
+.title h2{
+    color: rgb(112, 112, 112);
+    font-size: 35px;
+    border-left:3px solid rgba(0,0,0,0.3);
+    padding-left: 10px;
+    cursor: pointer;
+
 }
 
-nav ul li{
-    display: inline-flex;
-    text-align: center;
-    line-height: 80px;
-    margin: 0 5px;
+.container{
+    margin-top: 70px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top:20vh;
+    
 }
-nav ul li a{
-    color: black;
-    font-size: 3vh;
-    padding: 8px 15px;
-   
+
+
+section{
+    width: 100%;
+    height: 100vh;
 }
-nav ul li a:hover{
-    color: rgb(255, 255, 255);   /* Cambiar ese color */
-}
+
+/* Section Dclient */
 
 .Dclient{
-    padding-left: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    gap:50px;
+    justify-content: center;
+    
 }
+
 
 .caracteristicas{
-   text-align: right;
-   padding-right: 50px;
-   clear: both;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+
 }
 
-#img1{
-max-width: 400px;
-max-height: 400px;
-float :right;
-padding-right: 50px;
+.col-left{
+    width: 100%;
+    height: 100%;
+
 }
 
-#img2{
-    max-width: 400px;
-    max-height: 400px;
-    float :left;
-    padding-left: 50px;
+.col-rigth{
+    width: 100%;
+    height: 100%;   
+    
+}
+.Dclient .col-left{
+    display: flex;
+    justify-content: end;
+    
+
+}
+
+.caracteristicas .col-rigth{
+    display: flex;
+    justify-content: end;
+    
+
+}
+
+.direction-reverse{
+    flex-direction: row-reverse;
+
 }
 
 .equipo{
-   text-align: center;
-   clear: both;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.container-img{
+    width: 400px;
+
+}
+
+img{
+    width: 100%;
+    
+}
+
+/* End Section Dclient */
+
+
+footer{
+    width: 100vw;
+    height: 150px;
+    background-color: var(--color-base);
+    
+    color: var(--color-letras);
+    text-align: center;
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+
+}
+
+.foot li{
+    list-style: none;
+
 }
 
 
 
-@media (max-width:952px){
-    .enlace{
-        padding-left: 20px;
-    }
 
-    nav ul li a{
-        font-size: 16px;
-    }
-
-}
 
