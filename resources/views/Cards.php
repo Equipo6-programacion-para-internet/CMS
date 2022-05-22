@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles2.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="icon" href="../img/buscar.png">
     <title>Ver</title>
 </head>
@@ -30,6 +31,7 @@
         </section>
     </div>
     </header>
+
     <section>
         <div>
             <form action="" class="formulario" action="Cards.php" method="POST" >
@@ -82,11 +84,20 @@
             </form>
         </div>
     </section>
-        <footer>
-            <h4>Texto de relleno para cuando se me ocurra que poner</h4>
-            <h4>&#169 Dclient</h4>
-            
-        </footer>
+
+    <footer>
+        <h4>Contactanos </h4>
+        <div class="lista_footer">                  
+                <ul class="foot">
+                    <li><a href=" https://web.whatsapp.com" target="_blank"><img src="../img/whatsapp.png" alt=""></a> </li>
+                    <li><a href=" https://www.instagram.com" target="_blank"> <img src="../img/instagram.png" alt=""></a></li>
+                    <li><a href=" https://www.facebook.com/" target="_blank"> <img src="../img/facebook.png" alt=""> </li>
+                    <li><a href=" https://mx.linkedin.com" target="_blank"><img src="../img/linkedin.png" alt=""></a> </li>                  
+                </ul>
+            </div>
+            <h5> &#169 Dclient</h5>
+
+    </footer>
     
 </body>
 </html>
