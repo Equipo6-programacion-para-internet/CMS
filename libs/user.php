@@ -4,15 +4,15 @@
 
     class User extends Connect_db{
         public $name;
-        public $correo; 
+        public $rol; 
 
 
 
 
         public function userExists($email, $password){
-            $passwordMd5 = md5($password);
-
-            $query = $this->connect()->prepare("SELECT * FROM users WHERE email = '$email' AND password = '$passwordMd5';");
+            // $passwordMd5 = md5($password);
+            
+            $query = $this->connect()->prepare("SELECT * FROM usuarios WHERE Email = '$email' AND Contra = '$password';");
             $query->execute();
 
             if($query->rowCount() > 0){
@@ -25,21 +25,21 @@
 
 
         public function setEmail($email){
-            $query = $this->connect()->prepare("SELECT * FROM users WHERE email = :email");
+            $query = $this->connect()->prepare("SELECT * FROM usuarios WHERE Email = '$email';");
             
-            $query->execute([
-                'email' => $email
-            ]);
+            $query->execute();
 
             foreach($query as $currentEmail){
-                $this->correo = $currentEmail['email'];
-                $this->name = $currentEmail['full_name'];
-
+                $this->rol = $currentEmail['Rol'];
             }
         }
 
         public function getNombre(){
             return $this->name;
+        }
+
+        public function getRol(){
+            return $this->rol;
         }
     }
 

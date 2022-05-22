@@ -1,10 +1,14 @@
-﻿<!DOCTYPE html>
+﻿<?php
+    
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="<?php echo constant('URL');?>public/css/style.css">
     <link rel="icon" href="../img/login.png">
     <title>Login</title>
 </head>
@@ -25,7 +29,7 @@
                     <input type="password" class="input" placeholder="Contraseña" name="password">
                     <input type="submit" class="btn" value="Ingresar">
                 
-                        <a href="">Ingresar como invitado</a>
+                        <a href="<?php echo constant('URL');?>views/AnyView.php">Ingresar como invitado</a>
                 </form> 
             </div>
             <div class="col-right">
@@ -33,7 +37,7 @@
                     <h2>Hola de nuevo</h2>
                     <p>Ingresa el correo y la contraseña para iniciar sesion</p>
                     <p>Si no tienes una cuenta puedes crear una aqui</p>
-                    <button id="btn-register"><a href="ClientesStruct.php">Registrar</a></button>
+                    <button id="btn-register"><a href="<?php echo constant('URL');?>views/Register.php">Registrar</a></button>
                 </div>
             </div>
         </div>

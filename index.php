@@ -2,6 +2,7 @@
 <?php 
     include 'libs/user.php';
     include 'libs/user_session.php';
+    require_once 'resources/config/consts.php';
 
     
 
@@ -20,16 +21,17 @@
             $user->setEmail($email);
             $userSession = new UserSession();
             $userSession->setCurrentUser($user);
+            echo 'Usuario logueado';
             
         }
         else{
             echo '<script>alert("Usuario o contraseña incorrectos")</script>';
-            include_once 'resources/views/login.php';
+            include_once 'views/login.php';
 
         }
     }
     else{
-        include_once 'resources/views/Login.php';
+        include_once 'views/Login.php';
     }
 
     

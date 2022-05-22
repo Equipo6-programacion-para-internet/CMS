@@ -1,0 +1,247 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;700&display=swap');
+
+body{
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yantramanav', sans-serif;
+
+}
+
+/* Section Nav Bar */
+
+.container-header{
+    width: 100vw;
+    height: 70px;
+    background-color: #D81159;
+    position: fixed;
+    top: 0;
+}
+
+.container-header header nav{
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    
+    
+}
+
+
+.container-header header nav ul{
+    display: flex;
+    gap: 15px;
+}
+
+.container-header header nav ul li{
+    list-style: none;
+}
+
+.container-header header nav ul li a{
+    padding: 7px 12px;   
+    transition: all 0.3s ease-in-out;
+}
+
+.container-header header nav ul li a:hover{
+    background-color: #fff;
+    color: #3b3b3b;
+}
+
+.container-header header nav ul li .active{
+    border-bottom: 2px solid #fff;
+}
+
+
+
+
+
+
+.logo{
+    width: 80px;
+    
+    
+}
+
+.logo img{
+    width: 100%;
+    
+}
+
+/* End Section Nav Bar */
+
+
+main{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.title h2{
+    color: rgb(112, 112, 112);
+    font-size: 35px;
+    border-left:3px solid rgba(0,0,0,0.3);
+    padding-left: 10px;
+    cursor: pointer;
+
+}
+
+.container{
+    margin-top: 70px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top:20vh;
+    
+}
+
+/* Seccion barra de busqueda */
+
+.barra-busqueda{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.barra-busqueda .busqueda{
+    width: 60%;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid #717171;
+    /* border:none; */
+    border-radius: 40px;
+    text-align: center;
+    display: flex;
+    outline: none;
+    padding: 0 20px;
+    box-shadow: 0px 3px 13px rgba(109,106,106,0.16);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.barra-busqueda .busqueda:focus{
+    border: none;
+    border-bottom: 2px solid #D81159;
+
+}
+
+/* Seccion barra de busqueda */
+
+
+
+/* Section Cards Container*/
+
+.cards{
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+
+/* End Section Cards Container*/
+
+
+/* Section Card*/
+
+.card{
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 3px 13px rgba(109,106,106,0.16);
+    
+}
+
+
+.card-header{
+    width: 120px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card-header .avatar-card{
+    width: 80px;
+    height: 80px;
+    background: url(../img/avatar.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+}
+
+.card-body h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(112, 112, 112);
+    
+}
+
+.card-body .small-title{
+    font-size: 13px;
+    margin-top: -20px;
+}
+.card-body .normal-title{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* End Section Card*/
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+footer{
+    width: 100vw;
+    height: 50px;
+    background-color: #D81159;
+    text-align: center;
+    color: #fff;
+}
+
+.footer h4{
+    margin: auto;
+    padding: 10px;
+}
+
+
+
+@media (min-width: 1024px){
+    .barra-busqueda .busqueda{
+        width: 25%;
+    
+    }
+    .cards{
+        margin-top: 10vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .barra-busqueda .busqueda{
+        width: 40%;
+    
+    }
+}
+
+
+@media (max-width: 768px){
+    .cards{
+        margin-top: 10vh;
+        justify-content: center;
+    }
+    .barra-busqueda .busqueda{
+        width: 60%;
+    
+    }
+}
+
+
+
