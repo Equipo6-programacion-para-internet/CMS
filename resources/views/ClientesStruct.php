@@ -9,26 +9,23 @@
     <title>Document</title>
 </head>
 <body> 
-    <header>
-        <div class="container">
-            <section>
-        <nav class="inicio">
-            <a class="enlace">
-                <img src="../img/logo_princi.png" class="logo" alt="">
-            </a>
-            
+<header>
+        <div class="container"> <!-- Color del header -->
+            <nav class="inicio">
+                <a class="enlace">
+                    <img src="../img/logo_princi.png" class="logo" alt="">  <!-- Icono DClient  -->
+                </a>
                 
             <ul class="ulmenu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="clientes.html">Clientes</a></li>
-                <li><a href="clientesP.html">Clientes Potenciales</a></li>
+                <li><a href="inicio.php">Inicio</a></li>
+                <li><a href="Clientes.php">Clientes</a></li>
+                <li><a href="ClientesP.php">Clientes Potenciales</a></li>
                 <li><a href="#" id="on"><img src="../img/on.png" alt=""></a></li>
+                <li><a href="#" id="on"><img src="../img/cliente.png" alt=""></a></li>
+                <li><a href="">Username</a></li>
             </ul>
-        
-       
-        </nav>
-        </section>
-    </div>
+            </nav>
+        </div>
     </header>
 
 <main>
@@ -155,10 +152,20 @@ if ( in_array($_FILES['subir_imagen']['type'], $extensiones) || $ruta=="" ) {
 
     </div>
         </main>
-    
         <footer>
-            <h4>Texto de relleno para cuando se me ocurra que poner</h4>
-            <h4>&#169 Dclient</h4>
+
+            <h4>Contactanos </h4>
+
+            <div class="lista_footer">                  
+                    <ul class="foot">
+                        <li><a href=" https://web.whatsapp.com" target="_blank"><img src="../img/whatsapp.png" alt=""></a> </li>
+                        <li><a href=" https://www.instagram.com" target="_blank"> <img src="../img/instagram.png" alt=""></a></li>
+                        <li><a href=" https://www.facebook.com/" target="_blank"> <img src="../img/facebook.png" alt=""> </li>
+                        <li><a href=" https://mx.linkedin.com" target="_blank"><img src="../img/linkedin.png" alt=""></a> </li>                  
+                    </ul>
+                </div>
+                <h5> &#169 Dclient</h5>
+
         </footer>
 
 </body>

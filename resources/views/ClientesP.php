@@ -21,6 +21,7 @@ $resultado =$query->fetchAll();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style7.css">
     <link rel="stylesheet" href="../css/styles3.css">
+
     <link rel="icon" href="../img/clienteP.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -70,5 +71,23 @@ $resultado =$query->fetchAll();
         
         <?php endforeach; ?>
         </ul>
+
+    <footer>
+
+        <h4>Contactanos </h4>
+
+        <div class="lista_footer">                  
+                <ul class="foot">
+                    <li><a href=" https://web.whatsapp.com" target="_blank"><img src="../img/whatsapp.png" alt=""></a> </li>
+                    <li><a href=" https://www.instagram.com" target="_blank"> <img src="../img/instagram.png" alt=""></a></li>
+                    <li><a href=" https://www.facebook.com/" target="_blank"> <img src="../img/facebook.png" alt=""> </li>
+                    <li><a href=" https://mx.linkedin.com" target="_blank"><img src="../img/linkedin.png" alt=""></a> </li>                  
+                </ul>
+            </div>
+            <h5> &#169 Dclient</h5>
+
+    </footer>
+
+
 </html> 
 <?php $conexion = null;?>
