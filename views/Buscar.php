@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles6.css">
-    <link rel="stylesheet" type="text/css" href="../css/style_clientes.css">
-    <link rel="stylesheet" type="text/css" href="../css/style_clientes.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/core.css">
-    <link rel="stylesheet" type="text/css" href="../css/core.min.css">
-    <link rel="icon" href="../img/buscar.png">
+    <link rel="stylesheet" href="../public/css/styles6.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/style_clientes.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/style_clientes.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/core.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/core.min.css">
+    <link rel="icon" href="../public/img/buscar.png">
     <title>Ver</title>
 </head>
 <body> 
@@ -18,7 +18,7 @@
             <section>
         <nav class="inicio">
             <a class="enlace">
-                <img src="../img/logo_princi.png" class="logo" alt="">
+                <img src="../public/img/logo_princi.png" class="logo" alt="">
             </a>
             
                 
@@ -26,8 +26,8 @@
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="clientes.php">Clientes</a></li>
                 <li><a href="clientesP.php">Clientes Potenciales</a></li>
-                <li><a href="#" id="on"><img src="../img/on.png" alt=""></a></li>
-                <li><a href="#" id="on"><img src="../img/cliente.png" alt=""></a></li>
+                <li><a href="#" id="on"><img src="../public/img/on.png" alt=""></a></li>
+                <li><a href="#" id="on"><img src="../public/img/cliente.png" alt=""></a></li>
                 <li><a href="">Username</a></li>
             </ul>
         
@@ -54,8 +54,9 @@
             <h4>&#169 Dclient</h4>
         </footer>
         
-        <script src="../js/jquery-3.6.0.min.js"></script>     
-<script src="../js/Buscar.js"></script>
+        <script src="../resources/js/jquery-3.6.0.min.js"></script>     
+<script src="../resources/js/Buscar.js"></script>
         
 </body>
 </html>
+
