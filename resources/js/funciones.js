@@ -72,24 +72,24 @@ function alerta2(t) {
   
   function alertaNoti(t) {
     Swal.fire({
-      position: 'bottom-end',
+     // position: 'bottom-end',
       icon: 'success',
       title: 'Exito',
       text: t,
       showConfirmButton: false,
-      timer: 800,
+      timer: 1200,
       allowOutsideClick: true
     })
   }
   
   function alertaeNoti(t) {
     Swal.fire({
-      position: 'bottom-end',
+      //position: 'bottom-end',
       icon: 'error',
       title: 'Error...',
       text: t,
       showConfirmButton: false,
-      timer: 800,
+      timer: 1200,
       allowOutsideClick: true
     })
   }
