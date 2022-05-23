@@ -121,11 +121,13 @@ nav ul li a:hover{
     background-color: #d24146;
 }
 
-footer{
+.footer{
     height: 80px;
     background-color: bisque;
     text-align: center;
     bottom: 0;
-    position: absolute;
+    padding-top: 15px;
+    position: relative !important;
     width: 100%;
+    padding-bottom: 15px;
 }
