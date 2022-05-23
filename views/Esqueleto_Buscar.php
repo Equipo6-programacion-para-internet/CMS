@@ -1,6 +1,6 @@
 <?php
-require_once '../config/config.php';
-require_once '../config/functions.php';
+require_once '../resources/config/config.php';
+require_once '../resources/config/functions.php';
 
 /*$conexion = connect($server, $port, $db, $user, $pass);
 
@@ -9,6 +9,7 @@ if(!$conexion){
    header('Location: Login.php');
 }*/
 $mysqli = new mysqli("localhost","root","","dclient");
+
 
 //$mysqli =$conexion->prepare("SELECT Nombres, Apellidos, Telefono, DireccionF,Empresa
 //FROM clientes WHERE idClientes>1;");
@@ -36,11 +37,10 @@ $resultado = $mysqli->query($query);
 
 
 
+
 if($resultado->num_rows > 0){
-$resultados_encontrados = "<div>Resultados encontrados:</div>";
+
 $salida.= "
-<thead>
-<tbody>
 <div class='pd-ltr-20'>
 <div class='contact-directory-list'>
 <ul class='row'>";
@@ -59,7 +59,7 @@ $salida.= "
                     <div class='contact-dire-info text-center'>
                         <div class='contact-avatar'>
                             <span>
-                                <img src='../fotoClientes/foto2.jpg' alt=''>
+                                <img src='../resources/fotoClientes/foto1.jpg' alt=''>
                             </span>
                         </div>
                         <div class='contact-name'>
@@ -113,19 +113,17 @@ $salida.= "
     }
     $salida.=" </ul>
     </div>
-    </div>
-    </tbody>
-    </thead>";
+    </div>";
 
 }else{
 $salida.="No hay datos :(";
 }
 
 
-echo $resultados_encontrados;
+
 echo $salida;
 
-$resultados_encontrados= "";
+
 //$mysqli->close();
 
 ?>
